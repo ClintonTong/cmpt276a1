@@ -1,10 +1,14 @@
 <% provide(:title, @user.name) %>
 <h1>
   <%= gravatar_for @user %>
+  Hello,
   <%= @user.name %>
 </h1>
 <p>
-  <%= @user.name %>, <%= @user.email %>
+  Your Selected name:
+  <%= @user.name %><br>
+  Your email:
+  <%= @user.email %><br>
 </p>
 
 <% provide(:title, @user.name) %>
@@ -18,3 +22,7 @@
     </section>
   </aside>
 </div>
+
+
+
+<%= link_to 'Back', articles_path %>
